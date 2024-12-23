@@ -523,11 +523,3 @@ Highlight a random file inside your home directory
             navi.api.highlight(result)
         end
     end
-
-Acknowledgement
-===============
-
-Navi uses the following header-only C++ libraries. Thanks to the authors of the following libraries:
-
-- `ArgParse <https://github.com/p-ranav/argparse>`_ (for parsing command line arguments)
-- `Sol2 <https://github.com/ThePhD/sol2>`_ (for lua integration)
