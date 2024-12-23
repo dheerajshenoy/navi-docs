@@ -1,3 +1,4 @@
+import os
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -28,3 +29,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
+
+# Ensure the output path is set correctly for Read the Docs
+if os.getenv('READTHEDOCS'):
+    html_output = os.path.join(os.getenv('READTHEDOCS_OUTPUT', '.'), 'html')
